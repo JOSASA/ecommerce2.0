@@ -1,0 +1,210 @@
+
+:root {
+  --blanco: #ffffff;
+  --negro: #000000;
+  --primario: #383838;
+  --secundario: #005761;
+  --gris: #757575;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Krub', sans-serif;
+  margin: 0;
+  /*background-color: #771616;*/
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+
+.titulo span {
+  font-size: 2rem;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav-bg {
+  background-color: var(--gris);
+  border: solid var(--gris);
+  border-radius: 2.5rem;
+  border-start-end-radius: 0;
+  border-start-start-radius: 0;
+}
+
+.navegacion-principal ul {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navegacion-principal a {
+  padding: 0.5rem 1rem;
+  color: var(--blanco);
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+}
+/*Suscribe Box*/
+.contenedor-suscribete {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 36px 64px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--negro);
+  color: var(--blanco);
+}
+.contenedor-suscribete aside{
+  width: auto;
+}
+.titulo-suscribete p {
+  width: 90%;
+  max-width: 60%;
+  font-family: "Bungee", serif;
+  font-weight: 400;
+  font-size: 3.4rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.input-mail {
+  width: 100%;
+  max-width: 350px;
+  margin: 10px 0;
+}
+
+.input-mail input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 62px;
+  border: none;
+  outline: none;
+  background: var(--blanco);
+  color: var(--negro);
+  font-size: 1.6rem;
+}
+
+.boton-suscribete {
+  margin-top: 10px;
+}
+
+.boton-suscribete a {
+  width: 100%;
+  display: inline-block;
+  padding: 12px 16px;
+  text-align: center;
+  border-radius: 62px;
+  text-decoration: none;
+  color: var(--negro);
+  
+  background: var(--blanco);
+  font-size: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-suscribete a:hover {
+  background-color: var(--primario);
+  color: var(--blanco);
+}
+/*end suscribe box*/
+/*FOOTER*/
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #777;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons img{
+  height: 20px;
+  margin: 0 5px;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  border: #000000;
+  padding: 0.5rem 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-links div h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+}
+
+.payment-methods img {
+  height: 25px;
+  margin: 0 5px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+/*FIN FOOTER*/
