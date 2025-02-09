@@ -15,11 +15,13 @@ body {
   font-size: 1.6rem;
   font-family: 'Krub', sans-serif;
   margin: 0;
+  background-color: #ffffff;
   /*background-color: #771616;*/
 }
 
 
 .titulo {
+  font-family: Bungee;
   text-align: center;
   text-transform: uppercase;
   font-size: 3.8rem;
@@ -37,9 +39,7 @@ body {
 }
 
 .nav-bg {
-  background-color: var(--gris);
-  border: solid var(--gris);
-  border-radius: 2.5rem;
+  background-color: var(--blanco);
   border-start-end-radius: 0;
   border-start-start-radius: 0;
 }
@@ -50,12 +50,11 @@ body {
   justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
-  
 }
 
 .navegacion-principal a {
   padding: 0.5rem 1rem;
-  color: var(--blanco);
+  color: var(--negro);
   border-radius: 10px;
   transition: background-color 0.5s ease;
   text-decoration: none;
@@ -63,6 +62,7 @@ body {
 .navegacion-principal input{
   height: auto;
   width: auto;
+  
 }
 .navegacion-principal input:hover {
   
@@ -70,62 +70,89 @@ body {
 
 .navegacion-principal a:hover {
   background-color: var(--primario);
+  color: #f0f0f0;
 }
 /*INICIA HEADER*/
 .contenedor-comprar {
   display: flex;
-  flex-wrap: column;
-  text-align: left;
+  gap: 5%;
   position: relative;
-  margin: 30px auto;
-  padding: 36px 64px;
-  border-radius: 20px;
+  padding: 36px 36px;
   background-color: #f0f0f0;
-  height: 400px;
+  height: 800px;
 }
-.contenedor-texto-comprar{
-  width: 100%;
-  max-width: 500px;
-  text-align: left;
+.contenedor-texto-comprar h1,img{
+  flex: 1;
+  display: flex;
+  font-family: 'bungee', sans-serif;
+  font-size:8.7rem;
+  align-items: center;
+  justify-content: center;    
+  padding: 10px;
+  padding-bottom: 0;
+
+}
+.contenedor-texto-comprar P{
+font-family: 'Krub', sans-serif;
+text-align: left;
+font-size: 20px;
+padding-left: 20px;
+padding-top: 0;
+
+}
+.estadisticas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 75px ;
+  padding: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50px;
+  font-size: 24px;
+  width: 50%;
 }
 .contenedor-imagen {
-  width: auto;
-  padding-left: 30%;
+  
+  width: 100%;
+  
 }
 .contenedor-imagen img{
   width: 100%;
-
-  
   justify-content: right;
   height: 100%;
+  object-fit: cover;
 }
-
-
 .boton-comprar-ahora{
-  margin-top: 10px;
-  margin-bottom: 20px ;
-  margin-left: 30px;
+  margin-bottom: 75px ;
+  padding: 20px;
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
+  top: 60%;
+  left: 35px;
+  font-size: 24px;
+  width: 250px;
 }
 .boton-comprar-ahora a{
-  width: 100%;
-  padding: 12px 16px;
-  text-align: center;
-  border-radius: 62px;
-  text-decoration: none;
-  color: #f0f0f0;
-  background-color: black;
-  font-size: 1.6rem;
-  transition: background-color 0.3s ease;
+    display: block;  
+    padding: 20px;   
+    border-radius: 100px;
+    text-align: center;
+    color: #f0f0f0;
+    background-color: black;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
 }
 .boton-comprar-ahora a:hover{
   background-color: var(--gris);
   color: #000000;
 }
 /*contenedor comprar*/
+
+/*INICIA PRODUCTOS*/
+
 
 /*Suscribe Box*/
 .contenedor-suscribete {
