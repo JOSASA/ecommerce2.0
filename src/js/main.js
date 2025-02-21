@@ -1,1 +1,11 @@
-import './style.css'
+const nav = document.querySelector("#nav","#nav-list")
+const abrir = document.querySelector("#abrir")
+const  cerrar = document.querySelector("#cerrar")
+
+abrir.addEventListener("click", () => { 
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => { 
+    nav.classList.remove("visible");
+})
