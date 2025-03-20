@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="preload" href="/src/css/style.css" as="style">
+    <link href="/src/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="/src/images/logo.png" alt="logo">
+        <nav>
+            <a href="/index.html">Inicio</a> > <span>Carrito</span>
+        </nav>
+    </header>
+
+    <main class="carrito">
+        <h1 class="titulo">TU CARRITO</h1>
+        
+        <div class="contenedor-carrito">
+            <section class="productos">
+                <div class="producto">
+                    <img src="/src/images/camiseta1.jpg" alt="Camiseta Manga Corta">
+                    <div class="detalle-producto">
+                        <h2>Camiseta Manga Corta</h2>
+                        <p>Tamaño: L</p>
+                        <p>Color: Blanco</p>
+                        <span class="precio">$145</span>
+                    </div>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button class="eliminar">
+                        <img src="/src/images/eliminar.png" alt="Eliminar">
+                    </button>
+                </div>
+    
+                <div class="producto">
+                    <img src="/src/images/camiseta2.jpg" alt="Camiseta De Cuadros">
+                    <div class="detalle-producto">
+                        <h2>Camiseta De Cuadros</h2>
+                        <p>Tamaño: S</p>
+                        <p>Color: Rojo</p>
+                        <span class="precio">$180</span>
+                    </div>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button class="eliminar">
+                        <img src="/src/images/eliminar.png" alt="Eliminar">
+                    </button>
+                </div>
+    
+                <div class="producto">
+                    <img src="/src/images/jeans.jpg" alt="Skinny Jeans">
+                    <div class="detalle-producto">
+                        <h2>Skinny Jeans</h2>
+                        <p>Tamaño: L</p>
+                        <p>Color: Azul</p>
+                        <span class="precio">$240</span>
+                    </div>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button class="eliminar">
+                        <img src="/src/images/eliminar.png" alt="Eliminar">
+                    </button>
+                </div>
+            </section>
+    
+            <aside class="resumen-compra">
+                <h2>Resumen De Compra</h2>
+                <div class="detalle-resumen">
+                    <p>Subtotal <span>$565</span></p>
+                    <p>Descuento (-20%) <span class="descuento">-$113</span></p>
+                    <p>Cargo/Envío <span>$15</span></p>
+                    <p class="total">Total <span>$467</span></p>
+                </div>
+    
+                <div class="cupon">
+                    <input type="text" placeholder="Canjear Cupón">
+                    <button>Aplicar</button>
+                </div>
+    
+                <button class="proceder">Proceder →</button>
+            </aside>
+        </div>
+    </main>
+    
+
+    <div class="contenedor-suscribete">
+        <section class="titulo-suscribete">
+            <p>Recibe primero que todos nuestras ofertas</p>
+        </section>
+        <aside aria-label="email">
+            <div class="input-mail">
+                <input type="email" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="boton-suscribete">
+                <a href="#">Suscríbete</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+
+                <div class="social-icons">
+                    <img src="/src/images/logo.png" class="logo-footer" alt="logo">
+                    <a href="#"><img src="/src/images/X logo.png" alt=""><i class=""></i></a>
+                    <a href="#"><img src="/src/images/facebook logo.png" alt=""><i class=""></i></a>
+                    <a href="#"><img src="/src/images/Instagram logo.png" alt=""><i class=""></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h3>COMPAÑÍA</h3>
+                    <ul>
+                        <li><a href="#">Acerca De</a></li>
+                        <li><a href="#">Características</a></li>
+                        <li><a href="#">Trabajos</a></li>
+                        <li><a href="#">Carreras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>AYUDA</h3>
+                    <ul>
+                        <li><a href="#">Servicio Al Cliente</a></li>
+                        <li><a href="#">Detalles De Entrega</a></li>
+                        <li><a href="#">Términos Y Condiciones</a></li>
+                        <li><a href="#">Política De Privacidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="#">Cuentas</a></li>
+                        <li><a href="#">Manejar Entregas</a></li>
+                        <li><a href="#">Ordenes</a></li>
+                        <li><a href="#">Pagos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <img src="/src/images/visa logo.png" alt="Visa">
+                <img src="/src/images/mastercard logo.png" alt="Mastercard">
+                <img src="/src/images/paypal logo.png" alt="PayPal">
+                <img src="/src//images/Apple_Pay-Logo.wine.png" alt="Apple Pay">
+                <img src="/src/images/Google pay logo.png" alt="Google Pay">
+            </div>
+        </div>
+
+        <p class="footer-bottom">Gang Store © 2024-2025, Derechos Reservados</p>
+    </footer>
+
+</body>
+
+</html>
