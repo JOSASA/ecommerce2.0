@@ -399,17 +399,18 @@ body {
 .categorias {
   margin: 2%;
   background-image: linear-gradient(to right, black, gray, black, gray);
-  width: 100%;
-  max-width: 1300px;
+  width: auto;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se adapta al tamaño */
-  gap: 15px;
+  gap: 30px;
   padding: 3%;
   justify-content: center;
   border-radius: 30px;
 }
 
 .categorias a{
+  
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
@@ -417,10 +418,11 @@ body {
 }
 
 .categorias img{
+  width: auto;
   object-fit: contain;
   max-width: 100%;
   height: auto;
-  max-height: 300px; /* Ajuste para reducir el tamaño */
+  max-height: 300px; 
   border-radius: 20px
 }
 .categorias a:hover {
