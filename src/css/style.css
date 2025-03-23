@@ -11,9 +11,14 @@ html {
   font-size: 62.5%;
 }
 
+
+
+
+
+
 body {
   font-size: 1.6rem;
-  font-family: 'Krub', sans-serif;
+  font-family: 'Sans serif';
   margin: 0;
   background-color: #ffffff;
   /*background-color: #771616;*/
@@ -91,7 +96,6 @@ body {
         font-family: "Lexend", serif;
         text-decoration: none;
         color: #000000;
-        font-family: "Lexend", serif;
         font-optical-sizing: auto;
         font-style: normal;
         border-radius: 2rem;
@@ -209,7 +213,76 @@ body {
   background-color: var(--primario);
   color: #f0f0f0;
 }*/
+/* SLIDER*/
 
+.container-carrusel{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 5%;
+  background-image: linear-gradient(to bottom,#F0F0F0 ,black,red);
+  justify-content: center;  /* Centra el contenido del contenedor */
+  align-items: center;
+}
+
+.container-carrusel ul{
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 20s infinite;
+  align-content: center;
+  list-style: none;
+  margin: 0;
+  
+}
+
+.container-carrusel li{
+  list-style: none;
+  width: 100%;
+  align-items: center;
+  display: flex; /* Necesario para centrar la imagen */
+  justify-content: center;
+  align-items: center;
+}
+
+.container-carrusel img{
+  max-width:  1200px;
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0%, 25% { margin-left: 0%; }
+  35%, 60% { margin-left: -100%; }
+  70%, 100% { margin-left: -200%; }
+}
+/* Media Queries para hacer el carrusel responsive */
+@media (max-width: 768px) {
+  .container-carrusel {
+    padding-top: 2%;
+  }
+
+  .container-carrusel ul {
+    width: 300%;  /* Ajuste de ancho según el número de imágenes */
+  }
+
+  .container-carrusel img {
+    height: 300px;  /* Cambiar altura en pantallas medianas */
+  }
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 480px) {
+  .container-carrusel ul {
+    width: 300%;  /* Ajuste de ancho */
+  }
+
+  .container-carrusel img {
+    height: 200px;  /* Cambiar altura para móviles */
+  }
+}
 
 /*contenedor comprar*/
 .conteiner-buy {
@@ -232,7 +305,7 @@ body {
   display: flex;
   text-align: center;
   width: 60%;
-  font-family: 'Bungee', sans-serif;
+  font-family: 'Bungee';
   font-size: 3.4rem;
   padding: 1%;
   justify-content: space-between;
@@ -245,7 +318,7 @@ body {
 }
 
 .conteiner-title p {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Lexend', sans-serif;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -299,8 +372,9 @@ body {
   transition: all 0.3s ease-in-out; 
 }
 .conteiner-image-model img:hover {
-  transform: scale(1.05); 
-  box-shadow: 0px 8px 20px rgba(255, 51, 51, 0.7); 
+  transform: scale(1.05);
+
+  box-shadow: 0px 8px 20px rgba(255, 51, 51, 0.7);
 }
 /* ESto de aqui es IA */
 /* Responsive Design */
@@ -378,6 +452,7 @@ body {
 
 /*Categorias*/
 .contenedor-categorias{
+  background-image: linear-gradient(to bottom,red ,black,white);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -425,9 +500,11 @@ body {
   max-height: 300px; 
   border-radius: 20px
 }
-.categorias a:hover {
+.categorias img:hover {
+  filter: drop-shadow(0px 8px 20px rgba(255, 51, 51, 0.7));
+}
+.categorias a:hover{
   transform: scale(1.05); 
-  box-shadow: 0px 8px 20px rgba(255, 51, 51, 0.7); 
 }
 
 .categoria{
@@ -507,6 +584,7 @@ max-width: 280px;
 
 /*Suscribe Box*/
 .contenedor-suscribete {
+  
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -520,6 +598,7 @@ max-width: 280px;
 }
 .contenedor-suscribete aside{
   width: auto;
+  
 }
 .titulo-suscribete p {
   width: 90%;
