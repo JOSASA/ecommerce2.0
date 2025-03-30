@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.resumen-compra{
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+
+.summary-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+
+
+
+
+.payment-button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+}
+
+
+
+.informacion_facturacion {
+    padding: 20px;
+    border: 3px solid #ccc;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.informacion_facturacion label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.informacion-facturacion-inputs, .informacion-facturacion-selectors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.informacion-facturacion-inputs input,
+.informacion-facturacion-selectors select,
+.informacion-facturacion-selectors input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+

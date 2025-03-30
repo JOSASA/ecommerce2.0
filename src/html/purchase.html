@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/purchase.css">
+</head>
+
+<div class="container">
+    
+    <div class="informacion_facturacion">
+    <h2>Información de facturación</h2>
+
+    <div class="informacion-facturacion-inputs">
+        <div>
+            <label>Nombre Del Usuario</label>
+            <input type="text" placeholder="Nombre">
+        </div>
+        <div>
+            <label>&nbsp;</label> <!-- Empty label to keep alignment -->
+            <input type="text" placeholder="Apellido">
+        </div>
+        <div>
+            <label>Nombre De Compañía (Opcional)</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="informacion-facturacion-inputs">
+        <div style="grid-column: span 2;">
+            <label>Dirección</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="informacion-facturacion-selectors">
+        <div>
+            <label>País</label>
+            <select>
+                <option>Seleccionar...</option>
+            </select>
+        </div>
+        <div>
+            <label>Municipio/Estado</label>
+            <select>
+                <option>Seleccionar...</option>
+            </select>
+        </div>
+        <div>
+            <label>Ciudad</label>
+            <select>
+                <option>Seleccionar...</option>
+            </select>
+        </div>
+        <div>
+            <label>Código Postal</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="informacion-facturacion-inputs">
+        <div>
+            <label>Correo Electrónico</label>
+            <input type="email">
+        </div>
+        <div>
+            <label>Número De Teléfono</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="otraDireccion">
+        <label for="otraDireccion">Enviar A Otra Dirección</label>
+    </div>
+</div>
+
+    <div class="resumen-compra">
+        <h2>Resumen de compra</h2>
+        <div class="summary-container">
+            <p>subtotal</p> 
+            <span>$567</span>
+        </div>
+        <div class="summary-container">
+            <p>descuento</p>
+            <span>$567</span>
+        </div>
+        <div class="summary-container">
+            <p>envio</p>
+            <span>$567</span>
+        </div>
+        <div class="summary-container">
+            <p>total</p>
+            <span>$567</span>
+        </div>
+
+        <button class="payment-button">Proceder al pago</button>
+    </div>
+</div>
