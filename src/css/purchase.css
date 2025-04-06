@@ -77,3 +77,53 @@
     gap: 10px;
 }
 
+.metodos_pago{
+    display: flex;
+}
+.card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+.card img{
+    width: 50px;
+    height: auto;
+}
+
+.card input{
+    height: 60px;
+    width: 20px;
+}
+
+.payment-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-info input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.expiry-cvv{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.expiry-cvv div{
+    width: 100%;
+}
+
+textarea{
+    height: 150px;
+    border: 1px solid #ccc;
+}
+
