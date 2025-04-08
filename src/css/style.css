@@ -25,6 +25,7 @@ body {
 }
 /*header*/
     header{
+      
         display: flex;
         align-items: right;
         justify-content: space-between;
@@ -49,8 +50,9 @@ body {
 
     
     input{
+      
       border-radius: 62px;
-      background: #F0F0F0;
+      background: #dfd3d3;
       padding: 1rem 2rem;
       border-style: none;
       color: rgba(0, 0, 0, 1);
@@ -656,10 +658,13 @@ footer {
   background-color: #f0f0f0;
   padding: 40px 20px;
   text-align: center;
+  
 }
 
 .footer-container {
   display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .logo-footer{
@@ -668,23 +673,36 @@ footer {
   display: inline-flex;
   align-self: self-start;
 }
-
-.social-icons {
-  margin-top: 10px;
+.footer-logo{
+  display: flex;
+  
+  justify-content: space-between;
 }
+.social-icons {
+  display: flex;
+  
+  flex-direction: column;
+  
+  justify-content: space-evenly;
+  
+}
+
 
 .social-icons img{
   height: 20px;
-  margin: 0 5px;
+  
+  object-fit: contain;
 }
 .social-icons a {
   display: inline-block;
-  margin: 0 10px;
+  
   font-size: 18px;
   color: black;
   text-decoration: none;
   border: #000000;
   padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-links {
@@ -706,7 +724,7 @@ footer {
 }
 
 .footer-links ul li {
-  margin: 8px 0;
+  
 }
 
 .footer-links ul li a {
@@ -714,11 +732,19 @@ footer {
   color: #777;
   font-size: 14px;
 }
+.payment-methods {
+  /*acomodar en vertical los iconos de pago*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .payment-methods img {
   display: inline-block;
   height: 25px;
   margin: 0 5px;
+  object-fit: contain;
 }
 
 .footer-bottom {
