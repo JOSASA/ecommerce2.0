@@ -1,0 +1,118 @@
+
+.container {
+  display: flex;
+  flex-direction: row; /* Esto es por defecto, pero lo incluimos por claridad */
+  justify-content: end;
+  column-gap: 10px;
+}
+
+.filtros {
+  width: 200px; /* Ajusta el ancho según necesites */
+  margin-left: 25px;
+  border-style: solid;
+}
+
+.container_articles {
+  flex: 1; /* Ocupa el resto del espacio disponible */
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  width: 120%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin:  0px 25px 0 25px;
+  position: relative;
+}
+
+/*Estilo para articulos y su contenedor*/
+.container_article{
+  width: 280px;
+  height: auto;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.product_img {
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+.container_article img{
+  border-radius: 10px;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+}
+.container_article:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.article_details{
+  padding: 10px;
+  text-align: left;
+}
+
+.article_details p{
+  margin: 4px 0;
+  font-size: 17px;
+  font-weight: 700  ;
+  color: #333;
+}
+
+/* Estilo para clasificación tipo estrellas */
+p.clasificacion {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+p.clasificacion input {
+  position: absolute;
+  top: -9999px; /* Más lejos para asegurar invisibilidad */
+}
+
+p.clasificacion label {
+  float: right;
+  color: #a1a1a1;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+p.clasificacion label:hover,
+p.clasificacion label:hover ~ label,
+p.clasificacion input:checked ~ label {
+  color: #000;
+}
+
+/*PAginacion*/
+.paginacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+  .filtros {
+    display: none;
+  }
+  .container_articles {
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  }
+  .container_article {
+    width: calc(50% - 14px); /* Dos artículos por fila */
+    
+  }
+  .container_article img {
+    margin: 2px;
+    padding: 2px;
+  }
+  
+}
