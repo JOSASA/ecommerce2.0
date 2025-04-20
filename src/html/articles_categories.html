@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="/src/css/article_categories.css" />
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Freelancer</title>
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/style.css" as="style">
+    <link rel="stylesheet" href="/src/css/article_categories.css" as="style">
+    <link href="src/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header></header>
+  <div>
+    <header>
+      <img class="logo" src="../images/logo.png" alt="logo">
+      <button class="abrir-menu" id="abrir">Abrir</button> 
+      
+      <nav class="nav" id="nav">
+          <ul class="nav-list">
+              <button class="cerrar-menu" id="cerrar">Cerrar</button> 
+              <li><a href="#">Categorías</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="./src/html/shopping_cart.html">Carrito</a></li>
+              <li>
+                  <div class="input-wrapper">
+                      <input type="search" class="input" placeholder="Buscar">
+                      <a class="ignore" href="#" id="search"><img href="#" class="input-icon"  src="../images/buscar2.png" alt=""></a>
+            
+                  </div>
+              </li>
+              <div class="nav-list">
+                  <li><a href="#" ><img class="opciones" src="../images/user.png" alt=""></a></li>
+                  <li><a href="#" ><img class="opciones" src="../images/user.png" alt=""></a></li>
+              </div>
+          </ul>
+      </nav>
+  <header>
+  </div>
+  
 
   <section>
-    <div>
+    <div class="container_title">
       <h2>Casual</h2>
       <div>
         <p>Mostrando 1-10 de 89 productos. Ordenados por: Más popular</p>
@@ -18,15 +56,87 @@
     </div>
     
   <div class="container">
-      <aside class="filtros">
-        <p>Filtros</p>
-        <ul>
-            <li><p>T-Shirts</p></li>
-            <li><p>Shorts</p></li>
-            <li><p>Jeans</p></li>
-            <li><p>Hoodies</p></li>
-        </ul>
-      </aside>
+    <!-- Panel de filtros -->
+    <aside class="filter-panel-closed visible">
+      <button id="abrirFiltros">
+        <img src="../images/icons/filter_icon.png" alt="abrir filtros" class="filter-icon">
+      </button>
+    </aside>
+    
+    <!-- Panel de filtros -->
+    <aside class="filter-panel hidden">
+      <div class="filter-header">
+        <h2>Filtros</h2>
+        <button id="cerrar-filtro">
+          <img src="../images/icons/filter_icon.png" alt="cerrar filtros" class="filter-icon">
+        </button>
+      </div>
+      <hr>
+    
+      <div class="filter-section">
+        <div class="section-header">Categorias <span>&#9650;</span></div>
+        <div class="option-buttons">
+          <button class="option-button">T-shirts</button>
+          <button class="option-button">Shorts</button>
+          <button class="option-button">Accesorios</button>
+          <button class="option-button">Hoodies</button>
+          <button class="option-button">Jeans</button>
+        </div>
+      </div>
+      
+    
+      <div class="filter-section">
+        <div class="section-header">Precio <span>&#9650;</span></div>
+        <div class="price-range">
+          <input type="range" min="200" max="5000" />
+          <div class="price-labels">
+            <span>$200</span>
+            <span>$5000</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+    
+      <div class="filter-section">
+        <div class="section-header">Colores <span>&#9650;</span></div>
+        <div class="colors">
+          <span class="color" style="background-color: #00c03f;"></span>
+          <span class="color" style="background-color: #f00;"></span>
+          <span class="color" style="background-color: #ffd700;"></span>
+          <span class="color" style="background-color: #f60;"></span>
+          <span class="color" style="background-color: #0cf;"></span>
+          <span class="color selected" style="background-color: #00f;">✔</span>
+          <span class="color" style="background-color: #a0f;"></span>
+          <span class="color" style="background-color: #f0c;"></span>
+          <span class="color" style="background-color: #fff; border: 1px solid #ccc;"></span>
+          <span class="color" style="background-color: #000;"></span>
+        </div>
+      </div>
+      <hr>
+    
+      <div class="filter-section">
+        <div class="section-header">Talla <span>&#9650;</span></div>
+        <div class="option-buttons">
+          <button class="option-button">X-Small</button>
+          <button class="option-button">Small</button>
+          <button class="option-button">Medium</button>
+          <button class="option-button">Large</button>
+          <button class="option-button">X-Large</button>
+        </div>
+      </div>
+      <hr>
+      <div class="filter-section">
+        <div class="section-header">Categorias <span>&#9650;</span></div>
+        <div class="option-buttons">
+          <button class="option-button">Casual</button>
+          <button class="option-button">Formal</button>
+          <button class="option-button">Party</button>
+          <button class="option-button">Gym</button>
+        </div>
+      </div>
+     
+    </aside>
+    
     <!-- Contenedor de todos los artículos -->
     <div class="container_articles">
       
@@ -34,7 +144,7 @@
       <!-- Artículo 1 -->
       <div class="container_article">
         <div class="product_image">
-          <img src="/src/images/ropa/playera_casual_blanca.png" alt="">
+          <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
         </div>
         <div class="article_details">
           <p class="product_name">Camiseta Radiante</p>
@@ -57,7 +167,7 @@
       <!-- Artículo 2 -->
       <div class="container_article">
         <div class="product_image">
-          <img src="/src/images/ropa/playera_casual_blanca.png" alt="">
+          <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
         </div>
         <div class="article_details">
           <p class="product_name">Camiseta Radiante</p>
@@ -80,7 +190,7 @@
       <!-- Artículo 3 -->
       <div class="container_article">
         <div class="product_image">
-          <img src="/src/images/ropa/playera_casual_blanca.png" alt="">
+          <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
         </div>
         <div class="article_details">
           <p class="product_name">Camiseta Radiante</p>
@@ -103,7 +213,7 @@
       <!-- Artículo 4 -->
       <div class="container_article">
         <div class="product_image">
-          <img src="/src/images/ropa/playera_casual_blanca.png" alt="">
+          <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
         </div>
         <div class="article_details">
           <p class="product_name">Camiseta Radiante</p>
@@ -126,7 +236,7 @@
       <!-- Artículo 5 -->
       <div class="container_article">
         <div class="product_image">
-          <img src="/src/images/ropa/playera_casual_blanca.png" alt="">
+          <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
         </div>
         <div class="article_details">
           <p class="product_name">Camiseta Radiante</p>
@@ -149,7 +259,7 @@
     <!-- Artículo 6 -->
     <div class="container_article">
       <div class="product_image">
-        <img src="/src/images/ropa/playera_casual_blanca.png" alt="">
+        <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
       </div>
       <div class="article_details">
         <p class="product_name">Camiseta Radiante</p>
@@ -168,16 +278,99 @@
         <p class="price">$600</p>
       </div>
     </div>
+    <!-- Artículo 7 -->
+    <div class="container_article">
+      <div class="product_image">
+        <img src="/src/images/clothes/playera_casual_blanca.png" alt="">
+      </div>
+      <div class="article_details">
+        <p class="product_name">Camiseta Radiante</p>
+        <p class="clasificacion">
+          <input id="radio1-3" type="radio" name="estrellas3" value="5">
+          <label for="radio1-3">&#9644;</label>
+          <input id="radio2-3" type="radio" name="estrellas3" value="4">
+          <label for="radio2-3">&#9644;</label>
+          <input id="radio3-3" type="radio" name="estrellas3" value="3">
+          <label for="radio3-3">&#9644;</label>
+          <input id="radio4-3" type="radio" name="estrellas3" value="2">
+          <label for="radio4-3">&#9644;</label>
+          <input id="radio5-3" type="radio" name="estrellas3" value="1">
+          <label for="radio5-3">&#9644;</label>
+        </p>
+        <p class="price">$600</p>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+   
   </div>
   
   </section>
-    <div class="paginacion">
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <p>4</p>
-      <p>5</p>
+  <div class="paginacion">
+    <button class="pagina-btn" disabled>&laquo;</button>
+    <button class="pagina-btn active">1</button>
+    <button class="pagina-btn">2</button>
+    <button class="pagina-btn">3</button>
+    <span class="dots">...</span>
+    <button class="pagina-btn">6</button>
+    <button class="pagina-btn">&raquo;</button>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            
+            <div class="social-icons">
+                <img src="/src/images/logo.png" class="logo-footer" alt="logo">
+                <a href="#"><img src="/src/images/X logo.png" alt=""><i class=""></i></a>
+                <a href="#"><img src="/src/images/facebook logo.png" alt=""><i class=""></i></a>
+                <a href="#"><img src="/src/images/Instagram logo.png" alt=""><i class=""></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <div>
+                <h3>COMPAÑÍA</h3>
+                <ul>
+                    <li><a href="#">Acerca De</a></li>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                    <li><a href="#">Carreras</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>AYUDA</h3>
+                <ul>
+                    <li><a href="#">Servicio Al Cliente</a></li>
+                    <li><a href="#">Detalles De Entrega</a></li>
+                    <li><a href="#">Términos Y Condiciones</a></li>
+                    <li><a href="#">Política De Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#">Cuentas</a></li>
+                    <li><a href="#">Manejar Entregas</a></li>
+                    <li><a href="#">Ordenes</a></li>
+                    <li><a href="#">Pagos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <img src="/src/images/visa logo.png" alt="Visa">
+            <img src="/src/images/mastercard logo.png" alt="Mastercard">
+            <img src="/src/images/paypal logo.png" alt="PayPal">
+            <img src="/src//images/Apple_Pay-Logo.wine.png" alt="Apple Pay">
+            <img src="/src/images/Google pay logo.png" alt="Google Pay">
+        </div>
     </div>
-  <footer></footer>
+
+    <p class="footer-bottom">Gang Store © 2024-2025, Derechos Reservados ff</p>
+</footer>
+
+  <script src="../js/articles_categories.js"></script>
 </body>
 </html>
