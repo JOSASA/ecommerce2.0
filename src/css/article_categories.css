@@ -53,7 +53,6 @@
 .container_articles {
   flex: 1; /* Ocupa el resto del espacio disponible */
   display: flex;
-  flex-wrap: wrap;
   border-bottom: 1px solid #ccc;
   width: 120%;
   display: flex;
