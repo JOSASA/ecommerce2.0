@@ -25,20 +25,18 @@ body {
 }
 /*header*/
     header{
-      
         display: flex;
-        align-items: right;
+        align-items: center;
         justify-content: space-between;
-        padding: 1rem;
         background-color: #ffffff;
         border-bottom:1px solid #dfd3d3;
-        
+        margin-left: 12px;
     }
     
     .logo{
         max-width:10rem;
         display: flex;
-        align-self:self-start;
+        
     }
 
     
@@ -46,7 +44,8 @@ body {
     .nav-list {
         list-style-type: none;
         display: flex;
-        gap: 1rem;
+        gap: 20px;
+        align-items: center;
     }
 
     
@@ -54,7 +53,7 @@ body {
       
       border-radius: 62px;
       background: #dfd3d3;
-      padding: 1rem 2rem;
+      align-self: center;
       border-style: none;
       color: rgba(0, 0, 0, 1);
       font-family: "Lexend";
@@ -83,7 +82,7 @@ body {
       width: 20px;
       height: 20px;
       left: 12px;
-      top: 35%;
+      top: 58%;
       transform: translateY(-60%);
     }
 
@@ -102,8 +101,9 @@ body {
         font-optical-sizing: auto;
         font-style: normal;
         border-radius: 2rem;
-        padding: 1rem 1rem;
+        justify-content: space-around;
         align-items: right;
+        
     }
     
     .abrir-menu, .cerrar-menu{
@@ -289,7 +289,6 @@ body {
 
 /*contenedor comprar*/
 .conteiner-buy {
-  
   background-color: #F0F0F0 ;
   display: flex;
   flex-wrap: wrap;
@@ -298,10 +297,11 @@ body {
   width: auto;
   max-width: 100%; 
   height: auto;
-  max-height: 600px;
+  max-height: none;
   justify-content: center;
   background-position: center;
-  
+  overflow: hidden;
+  border-top: #000000 2px solid;
 }
 
 .conteiner-title {
@@ -466,7 +466,7 @@ body {
 }
 .contenedor-categorias h2{
   font-family: 'Bungee', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   
   justify-content: space-between;
   flex-direction: column;
@@ -659,13 +659,14 @@ footer {
   background-color: #f0f0f0;
   padding: 40px 20px;
   text-align: center;
-  
+  font-family: 'Bungee';
 }
 
 .footer-container {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .logo-footer{
@@ -716,12 +717,14 @@ footer {
 .footer-links div h3 {
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 
 .footer-links ul {
   display: inline;
   list-style: none;
   padding: 0.5rem 1rem;
+  text-align: center;
 }
 
 .footer-links ul li {
