@@ -44,7 +44,7 @@ body {
     .nav-list {
         list-style-type: none;
         display: flex;
-        gap: 20px;
+        gap: 30px;
         align-items: center;
     }
 
@@ -66,6 +66,7 @@ body {
     .input-wrapper {
       position: relative;
       width: 271px;
+      
     }
     
     .input {
@@ -82,37 +83,40 @@ body {
       width: 20px;
       height: 20px;
       left: 12px;
-      top: 58%;
+      top: 56%;
       transform: translateY(-60%);
     }
 
     .opciones{
       width: 25px;
       height: 25px;
-      padding: 0 1rem;
+      padding: 0.5rem 1rem;
       
       
     }
-    .nav-list li a {
+    .nav-list a {
       display: flex;
         font-family: "Lexend", serif;
         text-decoration: none;
         color: #000000;
         font-optical-sizing: auto;
         font-style: normal;
-        border-radius: 2rem;
+        
         justify-content: space-around;
         align-items: right;
         
+        border-bottom: 2px solid transparent;
     }
     
     .abrir-menu, .cerrar-menu{
         align-items: right;
         display: none;
+        
     }
     .nav-list a:hover:not(.ignore) {
-      background-color: var(--primario);
-      color: #f0f0f0;
+      border-bottom: 2px solid black;
+      
+      
     }
     @media screen and (max-width: 550px){
         .abrir-menu, .cerrar-menu{
